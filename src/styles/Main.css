@@ -1,0 +1,140 @@
+.product-images {
+  max-width: 100%;
+}
+
+.company__name {
+  color: var(--clr-orange);
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.leading__heading {
+  font-weight: 600;
+}
+
+.leading__paragraph {
+  color: var(--clr-grayish-blue);
+  margin: 0.9rem 0;
+}
+
+.text__section {
+  padding: 1rem;
+}
+
+.price {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.cost__section {
+  display: flex;
+  align-items: center;
+}
+
+.discount {
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  color: var(--clr-orange);
+  font-weight: bold;
+  padding: 0.5rem;
+  background-color: var(--clr-lightGrayishBlue);
+}
+
+.old__price {
+  margin-left: auto;
+  text-decoration: line-through;
+  color: var(--clr-grayish-blue);
+}
+
+.add_to_cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-inline: 1.3rem;
+  cursor: pointer;
+}
+
+.add_to_cart img {
+  max-width: 100%;
+}
+
+button {
+  /* width: 40%; */
+  background-color: var(--clr-orange);
+  color: var(--clr-White);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+button img {
+  color: var(--clr-White);
+}
+
+.product__image-section {
+  position: relative;
+}
+
+.prev__icon,
+.next__icon {
+  position: absolute;
+  top: 50%;
+  background-color: var(--clr-White);
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0 0.4rem;
+}
+
+.next__icon {
+  right: 0;
+}
+
+.product__thumbnails {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .prev__icon,
+  .next__icon {
+    display: none;
+  }
+
+  .main__section {
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+    gap: 3rem;
+    width: 70%;
+  }
+
+  .product__image-section .product-images {
+    border-radius: 10px;
+    width: 95%;
+  }
+
+  .product__thumbnails {
+    display: block;
+    display: flex;
+    gap: 1.3rem;
+    margin-top: 1.4rem;
+  }
+
+  .product__thumbnails > * {
+    max-width: 100%;
+    width: 20%;
+    border-radius: 10px;
+  }
+
+  .leading__heading {
+    font-size: 1.95rem;
+  }
+
+  .cart__button-section {
+    display: flex;
+    gap: 1rem;
+    border: 3px solid red;
+    margin-top: 1rem;
+  }
+}
