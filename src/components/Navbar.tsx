@@ -12,6 +12,8 @@ export default function Navbar() {
     setMobileNav(!mobileNav);
   }
 
+  function showCart() {}
+
   return (
     <header className="navigation">
       <div className="logo-section">
@@ -40,7 +42,7 @@ export default function Navbar() {
       </nav>
 
       <div className="cart__avatar">
-        <img src={cart} alt="" className="cart" />
+        <img src={cart} alt="" className="cart" onClick={showCart} />
         <img src={avatar} alt="" className="avatar" />
       </div>
     </header>

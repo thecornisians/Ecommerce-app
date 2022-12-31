@@ -4,10 +4,10 @@ import "../styles/Main.css";
 export default function Button() {
   return (
     <div className="button__div">
-      <button>
+      <a className="button">
         <img src={cart} alt="" />
         Add to Cart
-      </button>
+      </a>
     </div>
   );
 }

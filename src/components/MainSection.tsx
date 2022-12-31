@@ -8,6 +8,7 @@ import "../styles/Main.css";
 export default function Main() {
   const [product, setProduct] = useState("");
   const [addToCart, setAddToCart] = useState(0);
+  const [checkout, setCheckout] = useState(true);
 
   function addOne() {
     setAddToCart((prev) => prev + 1);
